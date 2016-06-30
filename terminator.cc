@@ -11,6 +11,8 @@
 #include <stdexcept>
 #include <thread>
 
+// Missing set_unexpected / unexpected_handler, violating noexcept, violating exception specification.
+
 #define LOG(msg, ...) fprintf(stderr, msg "\n", ##__VA_ARGS__)
 
 sigjmp_buf jmpbuf;
