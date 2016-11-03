@@ -11,7 +11,7 @@
 #include <stdexcept>
 #include <thread>
 
-// Missing set_unexpected / unexpected_handler, violating noexcept, violating exception specification.
+// Missing set_unexpected / unexpected_handler, violating noexcept, violating exception specification, parallel algorithms leaving with uncaught exception.
 
 #define LOG(msg, ...) fprintf(stderr, msg "\n", ##__VA_ARGS__)
 
